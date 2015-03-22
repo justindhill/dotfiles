@@ -39,7 +39,7 @@ nmap <c-j> :%!python -m json.tool<cr>
 let g:ctrlp_map = '<c-t>'
 
 " Ignores
-set wildignore+=art,img,*.js,.git,*.swf,font-awesome
+set wildignore+=art,img,.git,*.swf,font-awesome
 
 " Airline
 let g:airline_theme='light'
@@ -59,7 +59,7 @@ filetype plugin indent on
 set listchars=tab:→\ ,eol:$,
 
 " Printing
-set printoptions=paper:A4,portrait:n,duplex:short,wrap:y,number:n,syntax:n,left:5pc
+set printoptions=paper:A4,portrait:y,duplex:short,wrap:y,number:n,syntax:n,left:5pc
 
 " Strip trailing whitespace
 fun! <SID>StripTrailingWhitespaces()

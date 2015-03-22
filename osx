@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Disable Crashlytics launching in Xcode on build completion
+launchctl setenv FC_CRASHLYTICS_DISABLE "YES"
