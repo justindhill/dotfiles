@@ -21,3 +21,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export GOPATH="~/go"
 
+export HOMEBREW_GITHUB_API_TOKEN=c850f2525d24cb8218d789e83f137749eff16669
