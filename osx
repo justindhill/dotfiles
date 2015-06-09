@@ -2,3 +2,9 @@
 
 # Disable Crashlytics launching in Xcode on build completion
 launchctl setenv FC_CRASHLYTICS_DISABLE "YES"
+
+# re-enable key repeat
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# disable window animations
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
