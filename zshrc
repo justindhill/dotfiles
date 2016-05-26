@@ -12,7 +12,7 @@ alias lsd="python /home/justin/dropbox.py ls"
 alias syslog="sudo tail -f /private/var/log/system.log"
 alias mergelogs="cat \$(ls -tr ./log-*) > log-merged.txt"
 alias log="git log --no-merges --format=%B"
-alias symbolicate="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/symbolicatecrash"
+alias symbolicate="/Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/symbolicatecrash"
 alias webstrap="~/.web-bootstrap/bootstrap.sh"
 alias gitp="git push --recurse-submodules=on-demand"
 alias v='vagrant'
@@ -23,4 +23,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export GOPATH="~/go"
 
 export DEVELOPER_DIR="`xcode-select -p`"
+export PATH="$PATH:$DEVELOPER_DIR/usr/bin"
 export HOMEBREW_GITHUB_API_TOKEN=c850f2525d24cb8218d789e83f137749eff16669
