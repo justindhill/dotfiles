@@ -24,4 +24,13 @@ export GOPATH="~/go"
 
 export DEVELOPER_DIR="`xcode-select -p`"
 export PATH="$PATH:$DEVELOPER_DIR/usr/bin"
-export HOMEBREW_GITHUB_API_TOKEN=c850f2525d24cb8218d789e83f137749eff16669
+export PATH="$PATH:/Users/justin/Library/Android/sdk/platform-tools"
+export HOMEBREW_GITHUB_API_TOKEN=294383f748c80f09959d8f3729976e5723e17f7d
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/justin/.google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/justin/.google-cloud-sdk/completion.zsh.inc'
+
+vir() { source $1/bin/activate }

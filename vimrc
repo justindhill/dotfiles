@@ -70,3 +70,5 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+let g:jsx_ext_required = 0
