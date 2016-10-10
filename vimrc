@@ -24,7 +24,7 @@ set incsearch
 " Tab width
 set tabstop=4
 set shiftwidth=4
-set noexpandtab
+set expandtab
 
 " No line wrapping
 set nowrap

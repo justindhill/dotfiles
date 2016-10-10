@@ -23,6 +23,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export GOPATH="~/go"
 
 export DEVELOPER_DIR="`xcode-select -p`"
+export ANDROID_HOME="/Users/justin/Library/Android/sdk"
 export PATH="$PATH:$DEVELOPER_DIR/usr/bin"
 export PATH="$PATH:/Users/justin/Library/Android/sdk/platform-tools"
 export HOMEBREW_GITHUB_API_TOKEN=294383f748c80f09959d8f3729976e5723e17f7d
