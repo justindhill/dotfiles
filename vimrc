@@ -72,3 +72,7 @@ endfun
 autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 let g:jsx_ext_required = 0
+
+" .gradle files are groovy syntax!
+au BufRead,BufNewFile *.gradle set filetype=groovy
+
