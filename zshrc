@@ -13,25 +13,11 @@ alias syslog="sudo tail -f /private/var/log/system.log"
 alias mergelogs="cat \$(ls -tr ./log-*) > log-merged.txt"
 alias log="git log --no-merges --format=%B"
 alias symbolicate="/Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework/Versions/A/Resources/symbolicatecrash"
-alias webstrap="~/.web-bootstrap/bootstrap.sh"
-alias gitp="git push --recurse-submodules=on-demand"
-alias v='vagrant'
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-export GOPATH="~/go"
-
-export DEVELOPER_DIR="`xcode-select -p`"
-export ANDROID_HOME="/Users/justin/Library/Android/sdk"
+export DEVELOPER_DIR="`readlink /private/var/db/xcode_select_link`"
 export PATH="$PATH:$DEVELOPER_DIR/usr/bin"
+export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/Users/justin/Library/Android/sdk/platform-tools"
-export HOMEBREW_GITHUB_API_TOKEN=294383f748c80f09959d8f3729976e5723e17f7d
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/justin/.google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/justin/.google-cloud-sdk/completion.zsh.inc'
-
-vir() { source $1/bin/activate }
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
